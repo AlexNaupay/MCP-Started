@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "module": "nodenext", // o "NodeNext" si estás trabajando con Node.js
+    "target": "es2017", // o superior (por ejemplo, "ES2022")
+    "moduleResolution": "NodeNext", // Solo necesario si usas "NodeNext"
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true
+  }
+}
