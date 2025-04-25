@@ -22,6 +22,18 @@ server.tool(
     })
 );
 
+server.tool(
+    'norris-jokes',
+    'Proporciona chistes y hechos humorísticos relacionados con Chuck Norris, el famoso actor y artista marcial',
+    async () => {
+    const response = await fetch('https://api.chucknorris.io/jokes/random');
+    const data = await response.json();
+    return {
+        content: [{type: "text", text: data.value}]
+    }
+})
+
+
 // Add a dynamic greeting resource
 server.resource(
     "greeting",
