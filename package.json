@@ -4,6 +4,7 @@
   "main": "main.ts",
   "type": "module",
   "scripts": {
+    "build": "tsc && chmod 755 build/main.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npx tsx main.ts"
   },

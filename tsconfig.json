@@ -5,6 +5,7 @@
     "moduleResolution": "NodeNext", // Solo necesario si usas "NodeNext"
     "strict": true,
     "esModuleInterop": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "outDir": "./build"
   }
 }
